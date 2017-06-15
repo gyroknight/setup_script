@@ -9,6 +9,6 @@ apt-get install fish -y
 apt dist-upgrade -fy
 apt-get autoremove -y
 git config --global user.name "Vincent Zhao"
-git config --global user.email "zhao.v@husky.neu.edu"
+git config --global user.email "gyroknight@users.noreply.github.com"
 curl -L https://get.oh-my.fish | fish
 fish
