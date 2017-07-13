@@ -30,7 +30,7 @@ curl -o matchit.zip http://www.vim.org/scripts/download_script.php?src_id=8196
 unzip matchit.zip
 mv doc ~/.vim/
 mv plugin ~/.vim/
-pip3 install powerline-status
+sudo pip3 install powerline-status
 cp vimrc ~/.vimrc 
 
 curl -L https://get.oh-my.fish | fish
