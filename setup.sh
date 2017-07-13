@@ -32,6 +32,9 @@ mv doc ~/.vim/
 mv plugin ~/.vim/
 sudo pip3 install powerline-status
 cp vimrc ~/.vimrc 
+mkdir ~/.vim/.undo
+mkdir ~/.vim/.backup
+mkdir ~/.vim/.swp
 
 curl -L https://get.oh-my.fish | fish
 sh setup_fish.sh
