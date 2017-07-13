@@ -4,13 +4,13 @@
 
 rootpath=$(pwd)
 
-add-apt-repository ppa:fish-shell/release-2 -y
-add-apt-repository ppa:git-core/ppa -y
-add-apt-repository ppa:ubuntu-mozilla-daily/ppa -y
-apt-get update
-apt-get install git fish vim curl tmux firefox-trunk htop screenfetch python3-pip build-essential cmake python-dev python3-dev unzip -y
-apt dist-upgrade -fy
-apt-get autoremove -y
+sudo add-apt-repository ppa:fish-shell/release-2 -y
+sudo add-apt-repository ppa:git-core/ppa -y
+sudo add-apt-repository ppa:ubuntu-mozilla-daily/ppa -y
+sudo apt-get update
+sudo apt-get install git fish vim curl tmux firefox-trunk htop screenfetch python3-pip build-essential cmake python-dev python3-dev unzip -y
+sudo apt dist-upgrade -fy
+sudo apt-get autoremove -y
 pip3 install --upgrade pip
 git config --global user.name "Vincent Zhao"
 git config --global user.email "gyroknight@users.noreply.github.com"
@@ -25,7 +25,7 @@ git clone https://github.com/Valloric/YouCompleteMe.git ~/.vim/bundle/YouComplet
 cd ~/.vim/bundle/YouCompleteMe
 git submodule update --init --recursive
 ./install.py --clang-completer
-cd rootpath
+cd $rootpath
 curl -o matchit.zip http://www.vim.org/scripts/download_script.php?src_id=8196
 unzip matchit.zip
 mv doc ~/.vim/
