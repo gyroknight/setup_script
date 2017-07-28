@@ -36,5 +36,4 @@ mkdir ~/.vim/.undo
 mkdir ~/.vim/.backup
 mkdir ~/.vim/.swp
 
-curl -L https://get.oh-my.fish | fish
 sh setup_fish.sh
