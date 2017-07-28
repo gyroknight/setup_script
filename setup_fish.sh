@@ -2,6 +2,7 @@
 
 # Sets up fish.
 set fish_greeting
-curl -L https://get.oh-my.fish > install
-fish install
+git clone https://github.com/oh-my-fish/oh-my-fish
+cd oh-my-fish
+bin/install --offline
 omf install agnoster
