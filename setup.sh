@@ -14,6 +14,7 @@ sudo apt-get autoremove -y
 pip3 install --upgrade pip
 git config --global user.name "Vincent Zhao"
 git config --global user.email "gyroknight@users.noreply.github.com"
+mv .tmux.conf ~/
 
 #Vim setup
 mkdir -p ~/.vim/autoload ~/.vim/bundle
