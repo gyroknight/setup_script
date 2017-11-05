@@ -37,4 +37,6 @@ mkdir ~/.vim/.undo
 mkdir ~/.vim/.backup
 mkdir ~/.vim/.swp
 
-sh setup_fish.sh
+#Fish setup
+cp config.fish ~/.config/fish/
+/usr/bin/fish set fish_greeting
