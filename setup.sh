@@ -38,6 +38,9 @@ mkdir ~/.vim/.backup
 mkdir ~/.vim/.swp
 
 #Fish setup
-chsh -s `which fish`
+sudo chsh -s `which fish`
+touch ~/.config/fish/config.fish
 cp config.fish ~/.config/fish/config.fish
-/usr/bin/fish set fish_greeting
+
+#Cleanup
+rm -r doc plugin matchit.zip
