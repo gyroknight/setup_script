@@ -1,5 +1,5 @@
 " Maintainer:	Vincent Zhao
-" Last change:	11/11/2017
+" Last change:	1/28/2018
 
 " When started as "evim", evim.vim will already have done these settings.
 if v:progname =~? "evim"
@@ -77,3 +77,4 @@ set ic
 set smartcase
 highlight LineNr ctermfg=lightblue ctermbg=black
 set tabstop=4
+set shiftwidth=4
