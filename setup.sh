@@ -38,5 +38,6 @@ mkdir ~/.vim/.backup
 mkdir ~/.vim/.swp
 
 #Fish setup
+chsh -s `which fish`
 cp config.fish ~/.config/fish/config.fish
 /usr/bin/fish set fish_greeting
