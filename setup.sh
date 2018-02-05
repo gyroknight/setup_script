@@ -39,8 +39,10 @@ mkdir ~/.vim/.swp
 
 #Fish setup
 sudo chsh -s `which fish`
-touch ~/.config/fish/config.fish
-cp config.fish ~/.config/fish/config.fish
+mkdir ~/.config
+mkdir ~/.config/fish
+cp config.fish ~/.config/fish/
 
 #Cleanup
+cd $rootpath
 rm -r doc plugin matchit.zip
