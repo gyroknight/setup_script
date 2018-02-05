@@ -33,16 +33,13 @@ mv doc ~/.vim/
 mv plugin ~/.vim/
 sudo pip3 install powerline-status
 cp vimrc ~/.vimrc 
-mkdir ~/.vim/.undo
-mkdir ~/.vim/.backup
-mkdir ~/.vim/.swp
+mkdir -p ~/.vim/.undo ~/.vim/.backup ~/.vim/.swp
 
 #Fish setup
 sudo chsh -s `which fish`
-mkdir ~/.config
-mkdir ~/.config/fish
+mkdir -p ~/.config/fish
 cp config.fish ~/.config/fish/
 
 #Cleanup
 cd $rootpath
-rm -r doc plugin matchit.zip
+rm matchit.zip
