@@ -75,6 +75,6 @@ set directory=~/.vim/.swp//
 set number
 set ic
 set smartcase
-highlight LineNr ctermfg=lightblue ctermbg=black
-set tabstop=4
-set shiftwidth=4
+highlight LineNr ctermfg=lightblue ctermbg=black " Sets line number styling
+set tabstop=4 shiftwidth=4 backspace=2 " Adjusts tab size and backspace behavior
+set background=dark " Changes text color to stand out against dark backgrounds
