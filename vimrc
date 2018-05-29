@@ -1,10 +1,5 @@
 " Maintainer:	Vincent Zhao
-" Last change:	1/28/2018
-
-" When started as "evim", evim.vim will already have done these settings.
-if v:progname =~? "evim"
-  finish
-endif
+" Last change:	5/29/2018
 
 if has("vms")
   set nobackup		" do not keep a backup file, use versions instead
@@ -64,7 +59,7 @@ execute pathogen#infect()
 map <C-n> :NERDTreeToggle<CR>
 
 " Enable filetype plugins
-filetype plugin on
+filetype plugin indent on
 
 " Move backup, undo, and swap files
 set undodir=~/.vim/.undo//
@@ -78,3 +73,4 @@ set smartcase
 highlight LineNr ctermfg=lightblue ctermbg=black " Sets line number styling
 set tabstop=4 shiftwidth=4 backspace=2 " Adjusts tab size and backspace behavior
 set background=dark " Changes text color to stand out against dark backgrounds
+syntax on
