@@ -32,10 +32,6 @@ cp vimrc ~/.vimrc
 mkdir -p ~/.vim/.undo ~/.vim/.backup ~/.vim/.swp
 
 #Fish setup
-sudo chsh -s `which fish`
+chsh -s `which fish`
 mkdir -p ~/.config/fish
 cp config.fish ~/.config/fish/
-
-#Cleanup
-cd $rootpath
-rm matchit.zip
