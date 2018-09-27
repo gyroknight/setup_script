@@ -1,4 +1,5 @@
 set fish_greeting
+fish_vi_key_bindings
 
 if not pgrep ssh-agent > /dev/null
 	ssh-agent /usr/bin/fish
