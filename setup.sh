@@ -30,6 +30,7 @@ cd $rootpath
 sudo pip3 install powerline-status
 cp vimrc ~/.vimrc 
 mkdir -p ~/.vim/.undo ~/.vim/.backup ~/.vim/.swp
+cp ycm_global_ycm_extra.conf.py ~/.vim/.ycm_global_ycm_extra_conf.py
 
 #Fish setup
 chsh -s `which fish`

@@ -76,3 +76,4 @@ set background=dark " Changes text color to stand out against dark backgrounds
 syntax on
 set cc=110 " Add right margin
 let g:ycm_autoclose_preview_window_after_completion=1
+let g:ycm_global_ycm_extra_conf = '~/.vim/.ycm_global_ycm_extra_conf.py' " Set YCM C and C++ compile flags
