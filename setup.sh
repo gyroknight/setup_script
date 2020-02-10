@@ -14,6 +14,7 @@ sudo apt-get autoremove -y
 # pip3 install --upgrade pip
 git config --global user.name "Vincent Zhao"
 git config --global user.email "gyroknight@users.noreply.github.com"
+git config --global core.editor "vim"
 cp tmux.conf ~/.tmux.conf
 
 #Vim setup
