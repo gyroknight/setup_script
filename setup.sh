@@ -4,13 +4,14 @@
 
 rootpath=$(pwd)
 
-sudo add-apt-repository ppa:fish-shell/release-3 -y
-sudo add-apt-repository ppa:git-core/ppa -y
-sudo add-apt-repository ppa:ubuntu-mozilla-daily/ppa -y
-sudo apt-get update
-sudo apt-get install git fish vim curl tmux firefox-trunk htop screenfetch python3-pip build-essential cmake python-dev python3-dev unzip -y
-sudo apt dist-upgrade -fy
-sudo apt-get autoremove -y
+# Fail on any error
+# set -e
+
+sudo pacman -Syu --noconfirm
+sudo pacman -S --noconfirm git fish vim curl tmux htop screenfetch cmake python unzip
+sudo pacman -Rs --noconfirm vi
+sudo pacman -Qdtq | sudo pacman -Rs --noconfirm -
+pamac build --no-confirm firefox-nightly onedrive-abraunegg visual-studio-code-insiders shim-signed slack-desktop vi-vim-symlink
 # pip3 install --upgrade pip
 git config --global user.name "Vincent Zhao"
 git config --global user.email "gyroknight@users.noreply.github.com"
@@ -29,9 +30,9 @@ git submodule update --init --recursive
 ./install.py --clang-completer
 cd $rootpath
 sudo pip3 install powerline-status
-cp vimrc ~/.vimrc 
+cp vimrc ~/.vimrc
 mkdir -p ~/.vim/.undo ~/.vim/.backup ~/.vim/.swp
-cp ycm_global_ycm_extra.conf.py ~/.vim/.ycm_global_ycm_extra_conf.py
+cp ycm_global_ycm_extra_conf.py ~/.vim/.ycm_global_ycm_extra_conf.py
 
 #Fish setup
 chsh -s `which fish`
