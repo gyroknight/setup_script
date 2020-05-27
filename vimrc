@@ -74,6 +74,7 @@ highlight LineNr ctermfg=lightblue ctermbg=black " Sets line number styling
 set tabstop=4 shiftwidth=4 backspace=2 " Adjusts tab size and backspace behavior
 set background=dark " Changes text color to stand out against dark backgrounds
 syntax on
+set mouse=a
 set cc=110 " Add right margin
 let g:ycm_autoclose_preview_window_after_completion=1
 let g:ycm_global_ycm_extra_conf = '~/.vim/.ycm_global_ycm_extra_conf.py' " Set YCM C and C++ compile flags
