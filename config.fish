@@ -1,6 +1,6 @@
 # Suppress fish greeting
 set fish_greeting
-fish_vi_key_bindings
+# fish_vi_key_bindings
 
 # If ssh-agent is not active, start ssh-agent
 if not pgrep ssh-agent > /dev/null
