@@ -76,5 +76,6 @@ set background=dark " Changes text color to stand out against dark backgrounds
 syntax on
 set mouse=a
 set cc=110 " Add right margin
+set ttimeoutlen=50 " Set keycode detection to 50ms for fast Esc response
 let g:ycm_autoclose_preview_window_after_completion=1
 let g:ycm_global_ycm_extra_conf = '~/.vim/.ycm_global_ycm_extra_conf.py' " Set YCM C and C++ compile flags
