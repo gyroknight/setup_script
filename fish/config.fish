@@ -8,7 +8,7 @@ if not pgrep ssh-agent > /dev/null
 end
 
 # Add to PATH
-set -a PATH ~/.local/bin
+fish_add_path /opt/homebrew/bin
 
 # Attach tmux session
 # Creates a session with the given name and attach/switch to it
@@ -29,3 +29,4 @@ function ats
 end
 
 clear
+test -e /Users/gyroknight/.iterm2_shell_integration.fish ; and source /Users/gyroknight/.iterm2_shell_integration.fish ; or true
