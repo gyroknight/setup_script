@@ -4,11 +4,12 @@
 
 rootpath=$(pwd)
 
+sudo -v # Store password for Homebrew install
 NONINTERACTIVE=1 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 grep "brew" ~/.zprofile || echo 'eval "$(/opt/homebrew/bin/brew shellenv)"' >> ~/.zprofile
 eval "$(/opt/homebrew/bin/brew shellenv)"
 brew tap homebrew/cask-versions
-brew install git fish vim curl tmux firefox-nightly htop neofetch python@3.11 cmake unzip iterm2 discord google-chrome plex telegram pam-reattach
+brew install git fish vim curl tmux firefox-nightly htop neofetch python@3.11 cmake unzip iterm2 discord google-chrome plex telegram pam-reattach fig keepassxc stats alt-tab lolcat
 pip3 install --upgrade pip
 git config --global user.name "Vincent Zhao"
 git config --global user.email "gyroknight@users.noreply.github.com"
