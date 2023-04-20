@@ -1,13 +1,12 @@
-#!/usr/bin/fish
+#!/opt/homebrew/bin/fish
 
-#Vim setup
+# Update Pathogen
 curl -LSso ~/.vim/autoload/pathogen.vim https://tpo.pe/pathogen.vim
-cd ~/.vim/bundle
-for val in *
-	cd $val
-	git pull
-	cd ..
-end
+
+# Update YouCompleteMe
 cd ~/.vim/bundle/YouCompleteMe
 git submodule update --init --recursive
 ./install.py --clang-completer
+
+# Update all git repos for Vim
+find ~/.vim -name '.git' -prune -type d -print | parallel --eta 'echo {}; git -C {}/.. pull'

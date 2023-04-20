@@ -103,5 +103,4 @@ if (has("autocmd") && !has("gui_running"))
 endif
 packadd! onedark.vim
 colorscheme onedark
-packadd! CamelCaseMotion.vim
 let g:camelcasemotion_key = '<leader>'
